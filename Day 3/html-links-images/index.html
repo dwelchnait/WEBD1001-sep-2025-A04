@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Browse Text on Tab</title>
+        <title>HTML, Lists, Links and Images</title>
         <meta name="author" content="Don Welch">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
@@ -81,14 +81,23 @@
                 elements in order to have something to click on. -->
          <!-- An additional target attribute specifies where to display the linked 
             URL. _blank: Loads the URL into a new browsing context, usually a tab.  -->
-         <!-- Anchor tags can be placed in other elements, for example, a paragraph element. -->
+         <!-- Anchor tags can be placed in other elements, for example, a paragraph element (p). -->
        
-         <h2>Link to Sourdough Bread Recipe</h2>
+        <h2>Link to Sourdough Bread Recipe</h2>
         <p>
             Want to learn how to make sourdough bread? 
             <a href="https://alexandracooks.com/2017/10/24/artisan-sourdough-made-simple-sourdough-bread-demystified-a-beginners-guide-to-sourdough-baking/" target="_blank">Homemad Sourdough Bread, sep by step</a>
         </p>
     
+
+        <h2>Some useful Websites:</h2>
+        <!-- Links can also be placed in a list if they are a list of links. -->
+        <ul>
+            <li><a href="https://www.theperfectloaf.com/">The Perfect Loaf</a></li>
+            <li><a href="https://breadtopia.com/">Breadtopia</a></li>
+            <li><a href="https://www.youtube.com/@the_bread_code">The Bread Code</a></li>
+        </ul>
+
         <!-- An img element represents an image. It is a self-closing tag, 
             so nothing is placed inside the element. Image information is placed 
             in the attributes. -->
@@ -110,6 +119,41 @@
         <img src="/img/image-1.jpg" width="700" height="467" alt="Hands kneading dough on counter">
 
         <!-- Images can be subsititued for text content inside an anchor tag. 
-                This would make the image the clickable content. -->
+            This would make the image the clickable content. -->
+        <p>Go to full recipe:</p>
+        <a href="https://alexandracooks.com/2017/10/24/artisan-sourdough-made-simple-sourdough-bread-demystified-a-beginners-guide-to-sourdough-baking/" target="_blank">
+            <img src="img/image-2.svg" alt="Right facing arrow icon."> 
+        </a>
+
+    <h2>HTML Errors and Validation</h2>
+
+    <h3>using W3C service site</h3>
+
+    <p>HTML markup follows specific standards and rules to display correctly. 
+        It's common to make syntax or logical errors when writing your code. 
+        An HTML validation service will analyze your markup, identify any errors or warnings, 
+        and provide feedback to help you understand how to fix the issues.</p>
+
+    <a href="https://validator.w3.org/" target="_blank">W3C Validation Service</a>
+
+    <p>Using the 'Direct Input' tab within the W3C Validator, see if you can find and correct the error with the
+        following code. Afterwards, validate the entire .html file and correct any other issues.</p>
+
+    <h3>Visual Studio Code Extension</h3>
+
+    <p>Another way to validate your code is to add an extension into your VSC. The extension is W3C Web Validator. 
+        Once installed, a icon/text will appear in your lower left corner (checkmark W3C validation). Simply open the 
+        html file of interest and press the button.</p>
+
+    </p>
+
+    <h3>Common Types of HTML Errors:</h3>
+    <ul>
+        <p>Missing closing tags</p>
+        <p>Incorrect tag usage</p>
+        <p>Missing or incorrect usage of attributes</p>
+        <p>Improper nesting</p>
+        <p>Typos</p>
+    </ul>
     </body>
 </html>
