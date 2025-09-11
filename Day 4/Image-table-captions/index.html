@@ -1,0 +1,100 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Images, Tables and Captions</title>
+         <meta name="author" content="Don Welch">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <!-- 
+        the head tags, and paragraph tags are block tags
+        block tags generally will has some spacing in front and after your content
+         -->
+        <h1>Figure and Table Elements</h1>
+        <h2>What is the figure element and why use it?</h2>
+        <p>The figure element represents some flow content, optionally with a caption, 
+            that is self-contained (like a complete sentence) and is typically referenced 
+            as a single unit from the main flow of the document.</p>
+        <p>It is a semantic tag that tells the browser that these items have a relation to each other.</p>
+        <p>The figure is the parent element, and the img and figcaption elements are children nested inside.</p>
+    
+        <img src="img/students-carrying-rocket.jpg" alt="Students carring a rocket" Width="400" height="350">
+
+        <!-- 
+        using a caption with an image
+        structure:    figure
+                        img (you can have as many images as you wish)
+                        [figcaption]
+                      figure
+        the figcaption can be place before or after your image
+        Even though you COULD place a caption before and after your image, it does NOT
+           mean your should. If you do try, you will discover that the W3C validator will
+           object to having multiple captions within your figure tag!!!!!
+        -->
+         <figure>
+             <figcaption>This is a satilite image of a delta.</figcaption>
+            <img src="img/delta-landscape.jpg" alt="landscape" Width="400" height="350">
+         </figure>
+
+         <h2>HTML Tables</h2>
+        <p>The table element represents data with more than one dimension, 
+        in the form of a table.</p>
+
+        <!--
+            The table tag has several internal tags used to create the table structure.
+            Some are required others are optional
+            structure
+                table
+                  [caption]
+                  thead (indicates the column heading area)
+                    tr (this indicates a row)
+                       th (one of these tags for each column in your table) /th
+                    /tr
+                  /thead
+                  tbody (this is the content of your table)
+                    tr (you may have one or more rows in your table)
+                       td (each row many have one or more data cells, same number as th cells) /td
+                    /tr
+                  /tbody
+                /table
+        -->
+        <table>
+            <caption>Planetary Fact Sheet</caption>
+            <thead>
+                <tr>
+                    <th>Planet</th>
+                    <th>Diameter (km)</th>
+                    <th>Mass (10<sup>24</sup> kg)</th>
+                    <th>Distance from Sun (10<sup>6</sup> km)</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <td>Mercury</td>
+                    <td>4,879</td>
+                    <td>0.330</td>
+                    <td>57.9</td>
+                </tr>
+                <tr>
+                    <td>Venus</td>
+                    <td>12,104</td>
+                    <td>4.87</td>
+                    <td>108.2</td>
+                </tr>
+                <tr>
+                    <td>Earth</td>
+                    <td>12,756</td>
+                    <td>5.97</td>
+                    <td>149.6</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <cite>
+            Data Source: <a target="_blank" href="https://nssdc.gsfc.nasa.gov/planetary/factsheet/">
+                NASA Planetary Fact Sheet</a>
+        </cite>
+    </body>
+</html>
