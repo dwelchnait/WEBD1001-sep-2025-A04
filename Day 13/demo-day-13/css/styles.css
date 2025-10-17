@@ -1,0 +1,129 @@
+/* A font family on the body element will get inherited down to all the 
+fonts on the page. */
+/* Line height sets the height of lines of text. If the value is unitless, 
+it acts as a multiplier of the font size. */
+/* A line height of at least 1.5 times the font size is the WCAG guideline 
+for accessibility. */
+
+/* Element selectors */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+
+h1 {
+    /* by using properties of a element tag, you can override the defaults
+        for that element*/
+    font-size: 70px;
+}
+
+p {
+    color: firebrick;
+}
+
+
+
+
+/* 
+Conflicts
+
+What: when 2 or more rule declarations are refering to the same element AND
+        same property AND have deferent values, this is a conflict
+
+The browser gets confused. Which to use.
+
+Cascade and Specificity come into play
+
+Cascade : when there is a conflict and the weight of the selectors
+             in conflict are the same, then the last rule wins.
+
+Specificity: is the process of weighting the selector
+                individual elements weight 1
+                class elements      weight 10
+                id elements         weight 100 void using for styling
+                !important          weight 1000 void using
+*/
+
+/* A descendant selector will style the h2 inside a section element. 
+This will not style the h2 inside the footer element */
+/* Note the weight of this selector - two element selectors = 2 */
+main section h2 {
+    font-size: 32px;
+    color: #bd7851
+}
+
+footer h2 {
+    color: green;
+}
+
+h2 {
+    color: blue;
+}
+
+/* classes are used to target different elements with the same rules */
+.bluetext {
+    color:blue;
+}
+
+/*  multiple selectors are NOT decendant selectors
+    multiple selectors are just an short way of combining the same rule/property
+       for defernet selectors in one combined rule
+    multiple selector act as individual selectors
+    multiple selectors are separated by a comma ,*/
+h1,
+h2 {
+    font-style: italic;
+}
+
+li {
+    text-transform: uppercase;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+
+/* Without a space between the selectors, this becomes a combination selector. 
+This will style the <li> element WITH the class name. */
+/* The purpose of this is to be more specific and increase the selector weight. */
+
+li.capitalize {
+    text-transform: capitalize;
+}
+
+/* 
+    Psuedo classes
+    will action on certain actions available to specific tags
+    example: anchor tag
+             anchor tag has 4 states link, hover, click, visited
+             hover: when the cursor is located above the anchor on the page
+             visited: after the anchor has been visited
+             link: is not visited yet
+
+    important to also know is that the order of using pseudo classes on specific
+        element may be important
+
+        for anchor the suggested order is
+        link, visited, hover
+    
+*/
+
+a {
+    color:forestgreen;
+}
+
+a:link {
+    color: chartreuse;
+}
+
+a:visited {
+    color:cyan;
+}
+
+a:hover {
+    font-weight: bold;
+    font-size: larger;
+    color: firebrick;
+}
+
