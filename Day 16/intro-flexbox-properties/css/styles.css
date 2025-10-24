@@ -157,10 +157,10 @@ By default, the container is laid out in a row, with the main axis running
     from left to right. 
 However, when the container’s direction is changed to a
     column, the main axis runs top to bottom.
-possible values: row (default)
-                 row-reverse
-                 column
-                 column-reverse
+possible values: row (default) main horizontal cross vertical
+                 row-reverse main horizontal cross vertical
+                 column main vertical cross horizontal
+                 column-reverse main vertical cross horizontal
 */
 .flex-container-direction {
     display: flex;
