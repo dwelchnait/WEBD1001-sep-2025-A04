@@ -1,0 +1,85 @@
+/* the utilities and containers */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;  /* general font size for Chrome is 16px by default*/
+    /* the html tag itself can set the default font size
+    for your website. The font size set within the html
+    tag can be used by the rem unit of measure. */
+    color: #333446;
+    background-color: #eaefef;
+}
+
+/* Instead, we'll use a fixed-width container to limit the width of the content.
+Everything directly inside the body element gets wrapped in this container.
+This can also be called a container or a wrapper. */
+
+/* The width does not always have to be 960px. This amount can change depending on 
+the screen size the design is developed for. */
+.fixed-container { 
+    /* the width limits the horizontal width of the display area */
+    max-width: 960px;
+    /*center the display area
+       margin: top/bottom right/left
+       unit measure values of 0 do not need the unit measurement
+       auto will center the container area on the browser
+       */
+    margin: 0 auto;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row; /* row is the default for flex */
+    gap: 24px;
+}
+
+/* ***************** global typography ***************** */
+/* When styling h1–h6 headings, it is recommended to use element selectors so these 
+styles are applied consistently across the site. */
+h1,
+h2 {
+    color: #727E99;
+}
+
+h1 {
+    font-size: 64px;
+}
+
+header {
+    margin:24px 0;
+    border-bottom: 1px solid #b8cfce;
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
+}
+
+section {
+    margin-bottom: 24px;
+}
+
+.about-me p{
+    max-width: 468px;
+}
+
+.projects p{
+    max-width: 304px;
+}
+
+.contact p {
+     max-width: 468px;
+     border: 1px solid #b8cfce;
+     padding:24px 325px 24px 10px;
+}
+
+footer {
+    border-top: 1px solid  #b8cfce;
+    padding: 24px 0;
+}
+
+a {
+    color:#727e99;
+    font-weight: bold;;
+}
+
+a:hover {
+    color: #b8cfce;
+}
