@@ -1,0 +1,146 @@
+body {
+    background-color: #F8F4E1;
+}
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: row; /* this is the default; this statement in this case is optional*/
+    flex-wrap: wrap;
+    gap: 26px; /* remember to also account for the shadow border which is 2 px per box */
+}
+/*************** global typography **************************/
+h1 {
+    font-size: 45px;
+}
+
+h2 {
+    font-size: 36px;
+    /* box-model: using margin to push items apart */
+    margin-bottom: 16px;
+}
+
+p {
+    margin-bottom: 16px;
+}
+
+section {
+    margin-bottom: 52px;
+}
+
+/************** header ************************/
+header {
+    border-bottom: 2px solid #74312d;
+    margin: 24px 0;
+}
+
+/*************** top dishes ********************/
+
+/* 
+    deal with the paragraphs in top dishes
+    might try direct descendant main > section > section but it will not
+        isolate the paragraphs. Why? same descendant in the Feature Recipe
+    how to get around this problem? How about classes
+
+    create a class called top-dishes and place on the top section of top-dishes
+
+    Now you can do your descendant selector using top-dishes section. This will
+    only affect sections under the class
+
+*/
+.top-dishes section {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+     /* Values of box-shadow: if two values are given, they are interpreted as offset-x and offset-y.
+       If a third value is given, it is interpreted as a blur-radius.
+       A color value can also be added optionally. */
+    box-shadow: 5px 5px 3px #ccc;
+
+    /* Come back to the sections and size them to fit within the 960px flex container 
+        — three across a row and taking up the full width. 
+        
+        960 / 3 = 320 BUT there is spacing between the white boxes
+        (960 - spacing) / 3 = section size
+
+        (960 - 60) / 3 = 300px;
+
+        Remember to take into account any padding that has been applied to the box
+        */
+    width: 280px; /* this applies to the text content of the box model*/
+    
+
+}
+
+/*
+
+    Steps of Featured Reciept
+
+    step in index.html
+    Add the class featured to section element for Feature recipes
+    same technique as in top-dishes
+
+    picture needs to be on the left and the writing on the right
+    lets think of these as flex items (2 items)
+    if the area is flexed then one can get the image and writing on the same line
+    add the flex container in the featured area in a div the encapsulates picture and text
+
+    step in css
+
+    separate the flex items using gap
+
+*/
+.featured .flex-container{
+    gap: 1rem;
+}
+
+/*
+
+    the right column needs to be adjusted to fit
+
+    create a class called feature-right-col (see index.html)
+
+
+
+    adjust width to fit
+
+           padding within box model
+           background color
+
+*/
+
+.featured .featured-right-col {
+    width: 430px;
+    padding: 12px;
+    background-color: white;
+}
+
+/* 
+    Steps  of Given
+
+    practice the same techniques as above
+    difference, instead of using the flex-container,
+        place the flex properties inside the given class itself
+*/
+.given {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.given-left-col {
+    background-color: white;
+    padding:12px;
+    width: 250px;
+    margin-right: 2rem;
+}
+
+/***************** footer ************************/
+footer {
+    border-top: 2px solid #74512D;
+    padding:2rem 0;
+}
