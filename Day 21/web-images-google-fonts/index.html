@@ -1,0 +1,58 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Web Images and Google Fonts</title>
+        <meta name="author" content="Don Welch">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- when you are adding external font styles they are to be added before
+             you do your reset and your own custom css files
+             
+             preconnect
+                “Hey, we’re going to need to load resources from this domain 
+                        soon — go ahead and start the connection early.”
+
+                When the browser encounters this line, it starts the network handshake 
+                with https://fonts.googleapis.com before any actual requests for fonts are made.
+             -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Oswald:wght@200..700&display=swap">
+
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <div class="inner-container">
+            <header>
+                <h1>Modus Movement</h1>
+            </header>
+            <main>
+                <section>
+                    <h2>Our Services</h2>
+                    <div class="flex-container">
+                        <section>
+                            <img src="img/boxing-icon-bg.svg" alt="boxing icon">
+                            <h3>Boxing</h3>
+                            <p>Step into the ring and unleash your potential with our boxing program.</p>
+                        </section>
+                        <section>
+                            <img src="img/yoga-icon-bg.svg" alt="yoga icon">
+                            <h3>Yoga</h3>
+                            <p>Recharge your body and mind with our yoga sessions, perfect for improving flexibility, and focus.</p>
+                        </section>
+                        <section>
+                            <img src="img/fitness-icon-bg.svg" alt="fitness icon">
+                            <h3>Fitness</h3>
+                            <p>Our fitness area is equipped with everything you need for strength and cardio training.</p>
+                        </section>
+                    </div>
+                </section>
+            </main>
+            <footer>
+                
+            </footer>
+        </div>
+    </body>
+</html>
