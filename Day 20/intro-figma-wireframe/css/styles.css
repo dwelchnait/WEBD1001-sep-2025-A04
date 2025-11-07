@@ -47,14 +47,16 @@ h2 {
     margin-bottom: 48px;
 }
 
-.flex-container section p {
+.flex-container section p,
+.flex-container section img {
     margin-top: 12px;
 }
+
 .flex-container section {
     border-top: 12px solid #d946ef;
     width: 300px;
 }
 
 footer {
-    margin-top: 96px;
+    margin-top: 48px;
 }
