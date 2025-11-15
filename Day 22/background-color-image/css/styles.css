@@ -1,0 +1,122 @@
+body{
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    gap: 44px;
+}
+
+/* *************** global typography ********************** */
+h1 {
+    font-family: "Modak", system-ui;
+    font-weight:400; /* sometimes using key words will not work, instead try the intensity numbers */
+    font-size: 86px;
+    padding: 43px 0;
+
+}
+
+h2 {
+    font-family: "Modak", system-ui;
+    font-weight:200; /* sometimes using key words will not work, instead try the intensity numbers */
+    font-size: 57px;
+}
+
+h3 {
+    font-size: 34px;
+}
+
+/* ************* banner ******************************* */
+.banner {
+    margin-bottom: 54px;
+    background-color: #B5A28F; /* place default background color */
+    background-image: url(../img/banner-flower.svg); /* place background image */
+    background-repeat: no-repeat; /* only one copy of image in area */
+    background-size: cover; /* have image fill the banner section */
+    background-position: center; /* place place image in center */
+    padding-left: 35px;
+}
+.banner h2 {
+    padding: 50px 0 30px 0;
+}
+
+.banner p {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 1; /* adjust the spacing between lines to make closer, it is a multipler so no unit measure */
+    width: 339px;
+    margin-bottom: 27px;
+}
+
+.banner a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+    color: black;
+    padding: 16px 31px;
+    border-radius: 8px;
+    background-color: #FFC800;
+    margin-bottom: 50px;
+    /* The padding spacing doesn't apply because the element is inline by default. Switching to inline-block fixes that. */
+    display: inline-block;
+}
+
+.banner a:hover{
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+/* ******************* what we do ********************** */
+
+.what-we-do h2{
+    margin-left: 260px;
+    padding: 24px 48px;
+  
+}
+.what-we-do section{
+    width: 200px;
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+.what-we-do img{
+    margin-bottom: 16px;
+
+}
+
+/* **************** footer *************************** */
+/* at times there could possible be a problem with your background image
+   one technique you could use is to give the area a background color that
+        matches the image color
+   this is also useful if your image is a transparent image
+*/
+footer {
+    background-color: #BEB970;
+    color: black;
+    font-size: 16px;
+    height:298px;
+     background-image: url(../img/footer-flower.webp); /* place background image */
+    background-repeat: no-repeat; /* only one copy of image in area */
+    background-size: cover; /* have image fill the banner section */
+    background-position: center; /* place place image in center */
+    margin-bottom: 24px;
+}
+footer .flex-container {
+    display: flex;
+    gap: 14px;
+    justify-content: flex-start;
+    padding-top: 134px;
+    padding-left: 35px;
+}
+footer p {
+    width:425px;
+    padding-left: 35px;
+    margin-top: 35px;
+}
