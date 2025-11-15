@@ -97,6 +97,20 @@ h3 {
         matches the image color
    this is also useful if your image is a transparent image
 */
+
+ /* 
+        different file types for your images can affect the speed your
+            page travels to the user
+        the footer flower has been save as various file types
+        using the footer flower image of .png as the base, here is the
+            ratio of the other types to .png
+
+            png 1 : 1
+            svg 29 : 1
+            pjg 0.6 : 1
+            pdf 1.44 : 1
+            web 0.12 : 1 newest compression software
+    */
 footer {
     background-color: #BEB970;
     color: black;
