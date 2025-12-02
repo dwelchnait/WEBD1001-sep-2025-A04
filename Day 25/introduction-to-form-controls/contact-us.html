@@ -69,32 +69,39 @@
                                  each button needs a unique value associated
                                     with the control
                                  use the value attibute to assign the unique 
-                                    value to the button-->
-                            <div class="flex-container">
-                                <div>
+                                    value to the button
+                                    
+                                use border: none; to remove the default border -->
+                            <div>
+                                <div class="unstacked">
                                     <label for="phone-radio">Phone</label>
                                     <input id="phone-radio" type="radio" 
                                             name="contact" value="phone">
                                 </div>
-                                <div>
+                                <div class="unstacked">
                                     <label for="email-radio">Email</label>
                                     <input id="email-radio" type="radio"  
                                             name="contact" value="email">
                                 </div>
-                                <div>
+                                <div class="unstacked">
                                     <label for="message-radio">Text Message</label>
                                     <input id="message-radio" type="radio" 
                                             name="contact" value="message">
                                 </div>
                             </div>
                         </fieldset>
-                        <div>
+                        <div class="unstacked">
                             <label for="message">Message</label>
                             <textarea id="message" name="message" >
                             </textarea>
                         </div>
                         <div>
-                            <!-- checkbox value is a boolean value-->
+                            <!-- 
+                                checkbox value is a boolean value
+                                using span allows for selecting a portion of text
+                                    to be treat with css, the span tag can have
+                                    a unique class name if needed
+                            -->
                             <input id="checkbox" type="checkbox">
                             <label for="checkbox">I'd like to receive special offers and updates.</label>
                             <p><span>*</span> optional</p>
