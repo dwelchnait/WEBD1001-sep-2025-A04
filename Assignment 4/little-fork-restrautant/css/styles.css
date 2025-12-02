@@ -1,0 +1,71 @@
+/* .fira-sans-condensed-regular {
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}this is the styling file for the web site 
+
+
+.merriweather-<uniquifier> {
+  font-family: "Merriweather", serif;
+  font-style: normal;
+
+}*/
+
+body {
+  font-family: "Merriweather", serif;
+  font-style: normal;
+  background-color: white;
+}
+
+.container {
+    width: 1312px;
+    background-color: aliceblue;
+    margin: 0 auto;
+    padding:0 12px;
+}
+
+/* ************************ header - menu *************** */
+header {
+    padding: 22px 0;
+    
+}
+
+header section {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    font-family: "Fira Sans Condensed", sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 33px;
+}
+header nav ul a {
+   text-decoration: none;
+   color: #d2865b;
+}
+
+header nav ul a:hover {
+   text-decoration: none;
+   color: #5a322b;
+}
+
+/* ******************* footer *************************** */
+h2 {
+    color: #e5d098;
+     font-family: "Fira Sans Condensed", sans-serif;
+    font-weight: 800;
+    font-size: 26px;
+}
+
+.site-info {
+    display: flex;
+}
