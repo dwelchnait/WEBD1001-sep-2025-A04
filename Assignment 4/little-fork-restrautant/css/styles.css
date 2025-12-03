@@ -18,7 +18,7 @@ body {
 }
 
 .container {
-    width: 1312px;
+    width: 1288px;
     background-color: aliceblue;
     margin: 0 auto;
     padding:0 12px;
@@ -58,14 +58,166 @@ header nav ul a:hover {
    color: #5a322b;
 }
 
+/* *************** index - main - banner **************** */ 
+.banner {
+    padding-left: 44px;
+    padding-top: 143px;
+    padding-bottom: 66px;
+    background-image: url(../img/home-banner-background.png);
+}
+
+.banner h2 {
+    font-family: "Fira Sans Condensed", sans-serif;
+    color: #e5d098;
+    font-weight: bold;
+    font-size: 54px;
+    margin-bottom: 11px;
+}
+
+.banner p {
+    width: 482px;
+    font-size: 20px;
+    color: white;
+    margin-bottom: 22px;
+}
+
+.banner a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #d08153;
+    padding: 11px 18px;
+}
+
+.banner a:hover {
+    background-color: #5a3228;
+}
+
+/* *************** index - main - about **************** */ 
+.about {
+    display: flex;
+    gap: 32px;
+}
+.about h2 {
+    color: #d08153;
+    font-family: "Fira Sans Condensed", sans-serif;
+    font-weight: 800;
+    font-size: 54px;
+    margin-bottom: 11px;
+    padding-top: 88px;
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+    text-decoration-color:  #d08153;
+    text-underline-offset: 8px;
+    text-decoration-thickness: 2px;
+}
+
+.about p {
+    margin-bottom: 22px;
+    width:628px;
+}
+
+.about img {
+     padding: 88px 0;
+     width: 627px;
+     height: 627px;
+}
+
+/* *************** index - main - featured menu **************** */ 
+
+.featured-menu h2 {
+    color: #d08153;
+    font-family: "Fira Sans Condensed", sans-serif;
+    font-weight: 800;
+    font-size: 54px;
+    margin-bottom: 11px;
+    padding-top: 88px;
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+    text-decoration-color:  #d08153;
+    text-underline-offset: 8px;
+    text-decoration-thickness: 2px;
+}
+.featured-menu .menu-items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.featured-menu section{
+    border: 1px solid black;
+    padding:22px;
+     width:254px;
+     margin-bottom:32px;
+}
+.featured-menu section h3{
+
+    font-family: "Fira Sans Condensed", sans-serif;
+    font-weight: 800;
+    font-size: 22px;
+    /* width:254px; */
+}
+.featured-menu section p{
+
+    /* width:254px; */
+    font-size: 16px;
+}
 /* ******************* footer *************************** */
-h2 {
+
+footer{
+    background-color: #5a3228;
+}
+
+footer > section > p {
+    color: white;
+    text-align: center;
+    margin-top: 46px;
+}
+footer h2 {
     color: #e5d098;
      font-family: "Fira Sans Condensed", sans-serif;
     font-weight: 800;
     font-size: 26px;
+    margin-bottom: 11px;
+    text-align: center;
+    padding-top: 46px;
 }
 
 .site-info {
     display: flex;
+    justify-content: center;
+    gap:32px;
+    color: white;
+}
+
+.foot-column-1{
+    width: 242px;
+}
+
+.foot-column-2{
+    width: 242px;
+     
+}
+.foot-column-2 > p{
+    padding-left:35px;
+     
+}
+
+.foot-column-3{
+    width: 242px;
+     
+}
+
+.foot-column-3 > p{
+    padding-left:35px;
+     
+}
+
+.col-site-info{
+    display:flex;
+    gap: 11px;
+}
+.foot-column-1 .col-site-info{
+    margin-bottom: 11px;
+    align-items: start;
 }
