@@ -24,7 +24,11 @@ body {
     padding:0 12px;
 }
 
-/* ************************ header - menu *************** */
+.hidden {
+    display: none;
+}
+
+/* ************************ header *************** */
 header {
     padding: 22px 0;
     
@@ -99,6 +103,7 @@ header nav ul a:hover {
     display: flex;
     gap: 32px;
 }
+
 .about h2 {
     color: #d08153;
     font-family: "Fira Sans Condensed", sans-serif;
@@ -139,29 +144,123 @@ header nav ul a:hover {
     text-underline-offset: 8px;
     text-decoration-thickness: 2px;
 }
-.featured-menu .menu-items{
+
+.featured-menu .menu-items-1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
+.featured-menu .menu-items-2 {
+    display: flex;
+    justify-content: center;
+    gap:30px;
+}
+
 .featured-menu section{
     border: 1px solid black;
     padding:22px;
      width:254px;
      margin-bottom:32px;
 }
-.featured-menu section h3{
 
+.featured-menu section h3{
     font-family: "Fira Sans Condensed", sans-serif;
     font-weight: 800;
     font-size: 22px;
-    /* width:254px; */
 }
-.featured-menu section p{
 
-    /* width:254px; */
+.featured-menu section p{
     font-size: 16px;
 }
+
+/* *************** resservation - main - title **************** */ 
+
+.title {
+    padding-left: 44px;
+    padding-top: 125px;
+    padding-bottom: 66px;
+    background-image: url(../img/reservation-banner-background.png);
+}
+
+.title h2 {
+    font-family: "Fira Sans Condensed", sans-serif;
+    color: #e5d098;
+    font-weight: bold;
+    font-size: 54px;
+    margin-bottom: 11px;
+}
+
+.title p {
+    font-size: 20px;
+    color: white;
+}
+
+/* *************** resservation - main - form & map **************** */ 
+
+.form-map {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    gap: 48px;
+    margin-top: 44px;
+    margin-bottom: 88px;
+}
+
+/* *************** resservation - main - form **************** */ 
+
+.form-map .reservation-form{
+    width: 628px;
+
+}
+
+.form-map .reservation-form p{
+    background-color: #f3f4f6;
+}
+
+.form-map .reservation-form input{
+   font-size: 24px;
+}
+.form-map .reservation-form select{
+   font-size: 30px;
+}
+
+.form-map .reservation-form fieldset{
+     padding-left: 0;
+     padding-right: 0;
+     margin-bottom: 22px;
+}
+.form-map .reservation-form .stack{
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+   
+}
+
+.form-map .reservation-form .my-datetime{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   
+}
+
+.form-map .reservation-form .my-datetime input,
+.form-map .reservation-form .my-datetime select{
+    width: 298px;
+   
+}
+/* *************** resservation - main - map **************** */ 
+
+.form-map .location-map{
+    width: 628px
+}
+
+.form-map .location-map p{
+    padding: 22px;
+    font-size:16px;
+    font-style: italic;
+}
+
 /* ******************* footer *************************** */
 
 footer{
@@ -173,6 +272,7 @@ footer > section > p {
     text-align: center;
     margin-top: 46px;
 }
+
 footer h2 {
     color: #e5d098;
      font-family: "Fira Sans Condensed", sans-serif;
@@ -190,33 +290,22 @@ footer h2 {
     color: white;
 }
 
-.foot-column-1{
-    width: 242px;
-}
-
-.foot-column-2{
-    width: 242px;
-     
-}
-.foot-column-2 > p{
-    padding-left:35px;
-     
-}
-
+.foot-column-1,
+.foot-column-2,
 .foot-column-3{
     width: 242px;
-     
 }
 
+.foot-column-2 > p,
 .foot-column-3 > p{
-    padding-left:35px;
-     
+    padding-left:35px;    
 }
 
 .col-site-info{
     display:flex;
     gap: 11px;
 }
+
 .foot-column-1 .col-site-info{
     margin-bottom: 11px;
     align-items: start;
