@@ -99,10 +99,12 @@
                                 </fieldset>
                                  <fieldset>
                                     <div class="stack">
-                                        <label for="seating">Seating Preference</label>
-                                        Indoor<input id="seating" type="radio" name="seatingradios" value="indoor">
-                                        Bar<input id="seating" type="radio" name="seatingradios" value="bar">
-                                        Patio<input id="seating" type="radio" name="seatingradios" value="patio">
+                                     <label for="seating">Seating Preference</label>
+                                        <div class="unstack">
+                                            Indoor<input id="seating" type="radio" name="seatingradios" value="indoor">
+                                            Bar<input id="seating" type="radio" name="seatingradios" value="bar">
+                                            Patio<input id="seating" type="radio" name="seatingradios" value="patio">
+                                        </div>
                                     </div>
                                 </fieldset>
                                 <fieldset>
@@ -111,7 +113,7 @@
                                        <textarea id="requests"></textarea>
                                     </div>
                                 </fieldset>
-                                   <input type="button" value="BOOK RESERVATION">
+                                   <input type="button" value="BOOK RESERVATION" class="bookbutton">
                             </form>
                         </div>
                         <div class="location-map">
